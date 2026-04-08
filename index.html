@@ -7,7 +7,8 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Curating the best in Beauty, Wellness & Daily Gadgets. Discover your next favorite thing on Amazon.">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
     
     <!-- Configuração de Cores da Marca -->
     <script>
@@ -36,58 +38,21 @@
         }
     </script>
     
-    <!-- Estilos Clean & Minimalistas -->
-    <style>
-        body { 
-            background-color: #faf7eb; /* Mudado para combinar com o fundo da logo */
-            color: #4A5550; 
-        }
-        
-        /* Botões Secundários (Soft/Clean) */
-        .link-card { 
-            transition: all 0.3s ease; 
-            background-color: rgba(255, 255, 255, 0.7);
-            border: 1px solid rgba(139, 168, 142, 0.15);
-            box-shadow: 0 4px 15px rgba(139, 168, 142, 0.05);
-        }
-        
-        .link-card:hover { 
-            transform: translateY(-3px); 
-            background-color: rgba(255, 255, 255, 1);
-            box-shadow: 0 8px 25px rgba(139, 168, 142, 0.15); 
-            border-color: rgba(139, 168, 142, 0.4);
-        }
-
-        /* Botão Principal (Destaque) */
-        .main-link {
-            background-color: #8BA88E;
-            color: #ffffff;
-            border: none;
-            box-shadow: 0 6px 20px rgba(139, 168, 142, 0.3);
-        }
-        
-        .main-link:hover {
-            background-color: #7A967D;
-            box-shadow: 0 8px 25px rgba(139, 168, 142, 0.45);
-            border-color: transparent;
-            color: #ffffff;
-        }
-    </style>
 </head>
-<body class="font-sans antialiased min-h-screen flex flex-col items-center py-8 md:py-12 px-5">
+<body class="font-sans antialiased min-h-screen flex flex-col items-center px-4 py-6 md:px-5 md:py-12">
     
-    <div class="w-full max-w-md flex flex-col items-center z-10">
+    <main class="w-full max-w-md flex flex-col items-center z-10">
         
         <!-- Profile Image (MUITO MAIOR, Sem círculo cortando) -->
-        <div class="w-72 h-72 md:w-[320px] md:h-[320px] flex items-center justify-center -mb-6 md:-mb-8">
-            <img src="nuvea-logo-nobg.png" alt="Nuvea Finds Logo" class="w-full h-full object-contain drop-shadow-sm" onerror="this.src='https://ui-avatars.com/api/?name=Nuvea+Finds&background=8BA88E&color=fff&size=256'">
+        <div class="w-full max-w-[220px] sm:max-w-[250px] md:max-w-[320px] flex items-center justify-center mb-2 md:mb-1">
+            <img src="assets/images/nuvea-logo-nobg.png" alt="Nuvea Finds Logo" class="brand-logo w-full h-full object-contain drop-shadow-sm" onerror="this.src='https://ui-avatars.com/api/?name=Nuvea+Finds&background=8BA88E&color=fff&size=256'">
         </div>
 
         <!-- H1 escondido (Apenas para SEO, já que a logo tem o nome) -->
         <h1 class="sr-only">Nuvea Finds</h1>
 
         <!-- Bio -->
-        <p class="text-center text-[14px] md:text-[15px] font-medium text-nuvea-dark/80 mb-8 md:mb-10 px-2 leading-relaxed">
+        <p class="text-center text-sm md:text-[15px] font-medium text-nuvea-dark/80 mb-8 md:mb-10 px-3 leading-relaxed">
             ✨ Curating the best in Beauty, Wellness & Daily Gadgets.<br>
             Discover your next favorite thing. 👇
         </p>
@@ -96,29 +61,29 @@
         <div class="w-full space-y-4">
             
             <!-- Link 1: O Principal -->
-            <a href="#" class="link-card main-link block w-full text-center py-4 px-6 rounded-[20px] font-semibold transition-all">
+            <a href="#" class="link-card main-link block w-full text-center px-5 py-4 rounded-[20px] font-semibold transition-all">
                 🛍️ Shop My Amazon Storefront
             </a>
 
             <!-- Link 2 -->
-            <a href="#" class="link-card main-link block w-full text-center py-4 px-6 rounded-[20px] font-semibold transition-all">
+            <a href="#" class="link-card main-link block w-full text-center px-5 py-4 rounded-[20px] font-semibold transition-all">
                 💄 Viral Makeup & Skincare Finds
             </a>
 
             <!-- Link 3 -->
-            <a href="#" class="link-card main-link block w-full text-center py-4 px-6 rounded-[20px] font-semibold transition-all">
+            <a href="#" class="link-card main-link block w-full text-center px-5 py-4 rounded-[20px] font-semibold transition-all">
                 🌱 Wellness & Health Must-Haves
             </a>
 
             <!-- Link 4 -->
-            <a href="#" class="link-card main-link block w-full text-center py-4 px-6 rounded-[20px] font-semibold transition-all">
+            <a href="#" class="link-card main-link block w-full text-center px-5 py-4 rounded-[20px] font-semibold transition-all">
                 🏡 Aesthetic Home Gadgets
             </a>
 
         </div>
 
         <!-- Social Icons (Footer) -->
-        <div class="flex gap-6 mt-16 opacity-80">
+        <div class="flex gap-6 mt-14 md:mt-16 opacity-80">
             <!-- Pinterest -->
             <a href="https://pinterest.com/Nuvea_Finds" target="_blank" class="text-nuvea-green hover:text-nuvea-dark transition-colors duration-300">
                 <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.951-7.252 4.168 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.366 18.619 0 12.016 0z"/></svg>
@@ -130,9 +95,9 @@
         </div>
 
         <!-- Copyright -->
-        <p class="mt-8 text-xs text-nuvea-dark/40">© 2026 Nuvea Finds. All rights reserved.</p>
+        <p class="mt-8 px-2 text-center text-xs text-nuvea-dark/40">© 2026 Nuvea Finds. All rights reserved.</p>
 
-    </div>
+    </main>
 
 </body>
 </html>
